@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0041)http://gruvi.cs.sfu.ca/project/timeslice/ -->
+<html class="gr__gruvi_cs_sfu_ca"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title> P2P-NET: Bidirectional Point Displacement Net for Shape Transform </title>
+</head>
+
+
+<style type="text/css">
+    <!--
+a,body,h1,h2,h3,table,td,th {
+	color:#14140f;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size:14px;
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+p {
+	text-align:justify;
+}
+
+h1 {
+	font-size:24px;
+	padding: 0.5em;
+}
+
+h2 {
+	text-align: left;
+	font-size: 20px;
+	padding-top:1em;
+}
+
+body {
+	width:800px;
+	padding-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+a {
+	color:#b80a00;
+	text-decoration:none;
+	font-weight:700;
+}
+
+a:visited {
+	text-decoration:none;
+	font-weight:700;
+}
+
+a:hover {
+	color:#ff1400;
+}
+
+div#footer {
+	margin:auto;
+	padding:3em;
+	color: #999;
+}
+
+div#author-list{
+	padding: 1em;
+	
+	font-size:16px;
+}
+
+div#author-list a{
+	margin: 0.75em;
+	font-size: 1.1em;
+}
+
+div#author-affiliation{
+	padding: 1em;
+	padding-top: 0em;
+	width: 500px;
+	margin:auto;
+}
+
+span.affiliation{
+	padding: 1em;
+	color:#aaa;
+}
+
+div#venue{
+	padding-bottom: 0.5em;
+	color:#bbb;
+	
+	font-size:16px;
+}
+
+div#package a{
+	margin: 0.75em;
+	
+	font-size:16px;
+}
+
+img#teaser{
+	width: 800px;
+}
+
+
+#gruvi-logo{
+	width: 300px;
+}
+
+    -->
+</style>
+
+
+
+<body data-gr-c-s-loaded="true">
+
+<div id="paper-title"> <h1> P2P-NET: Bidirectional Point Displacement Net for Shape Transform</h1> </div>
+
+<div id="venue">
+	SIGGRAPH  2018
+</div>
+
+<div id="author-list">  
+	<a href="http://kangxue.org/"> Kangxue Yin </a>
+	<a href="http://vcc.szu.edu.cn/~huihuang/"> Hui Huang </a>
+	<a href="http://www.cs.tau.ac.il/~dcor/"> Daniel Cohen-Or </a>
+	<a href="https://www.cs.sfu.ca/~haoz/"> Hao Zhang </a>	
+</div>
+
+
+<div id="teaser-part">
+	<a class="imageLink" href="images/p2p_rep.jpg" ><img id="teaser" src="images/p2p_rep.jpg" style="height: 300px; width: auto" ></a>
+</div>
+
+<div id="abstract">
+	<h2 class="caption"> Abstract </h2>
+	<p class="paragraph">  
+We introduce P2P-NET, a general-purpose deep neural network which learns geometric transformations between point-based shape representations from two domains, e.g., meso-skeletons and surfaces, partial and complete scans, etc. The architecture of the P2P-NET is that of a bi-directional point displacement network, which transforms a source point set to a target point set with the same cardinality, and vice versa, by applying point-wise displacement vectors learned from data. P2P-NET is trained on paired shapes from the source and target domains, but without relying on point-to-point correspondences between the source and target point sets. The training loss combines two uni-directional geometric losses, each enforcing a shape-wise similarity between the predicted and the target point sets, and a cross-regularization term to encourage consistency between displacement vectors going in opposite directions. We develop and present several different applications enabled by our general-purpose bidirectional P2P-NET to highlight the effectiveness, versatility, and potential of our network in solving a variety of point-based shape transformation problems.
+	</p>
+</div>
+
+<div id="package">
+	<a href="https://arxiv.org/pdf/1803.09263.pdf">paper</a>
+	<a href="https://www.dropbox.com/s/xwqyhl7uwnnagdb/P2P-NET.pptx?dl=1">slides</a>
+	<a href="https://www.dropbox.com/s/fz3khhwx6cxdnb5/data_hdf5.zip?dl=1">data(hdf5)</a>
+	<a href="https://www.dropbox.com/s/ezmmu9k66rdxoiu/data_raw.zip?dl=1">data(raw)</a>
+	<a href="https://github.com/kangxue/P2P-NET">code</a>
+	
+</div>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+<div id="video">
+	<h2 class="caption">Fast-forward Video </h2>
+	<br>
+
+<iframe width="600" height="338" src="https://www.youtube.com/embed/RYzLWF4cNrY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+	<br>
+	<br>
+
+<h2 class="caption">Citation </h2>
+<p class="paragraph">  
+@article {yin2018p2pnet,  <br>&nbsp; &nbsp;
+  author = {Kangxue Yin and Hui Huang and Daniel Cohen-Or and Hao Zhang}  <br>&nbsp; &nbsp;
+  title = {P2P-NET: Bidirectional Point Displacement Net for Shape Transform}  <br>&nbsp; &nbsp;
+  journal = {ACM Transactions on Graphics(Special Issue of SIGGRAPH)}  <br>&nbsp; &nbsp;
+  volume = {37}  <br>&nbsp; &nbsp;
+  number = {4}  <br>&nbsp; &nbsp;
+  pages = {152:1--152:13}  <br>&nbsp; &nbsp;
+  year = {2018}  <br>
+}
+<br>
+
+</p>
+</div>
+
+
+
+
+<div id="footer">
+	<a href="http://gruvi.cs.sfu.ca/"> <img id="gruvi-logo" src="./misc/gruvi_logo.png" style="height: 40px; width: auto;"> </a>
+</div>
+
+
+
+</body>
+</html>
