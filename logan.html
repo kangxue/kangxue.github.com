@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0041)http://gruvi.cs.sfu.ca/project/timeslice/ -->
+<html class="gr__gruvi_cs_sfu_ca"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title> 	LOGAN: Unpaired Shape Transform in Latent Overcomplete Space </title>
+</head>
+
+
+<style type="text/css">
+    <!--
+a,body,h1,h2,h3,table,td,th {
+	color:#14140f;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size:14px;
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+
+p {
+	text-align:justify;
+}
+
+h1 {
+	font-size:24px;
+	padding: 0.5em;
+}
+
+h2 {
+	text-align: left;
+	font-size: 20px;
+	padding-top:1em;
+}
+
+body {
+	width:800px;
+	padding-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+a {
+	color:#b80a00;
+	text-decoration:none;
+	font-weight:700;
+}
+
+a:visited {
+	text-decoration:none;
+	font-weight:700;
+}
+
+a:hover {
+	color:#ff1400;
+}
+
+div#footer {
+	margin:auto;
+	padding:3em;
+	color: #999;
+}
+
+div#author-list{
+	padding: 1em;
+	
+	font-size:16px;
+}
+
+div#author-list a{
+	margin: 0.75em;
+	font-size: 1.1em;
+}
+
+div#author-affiliation{
+	padding: 1em;
+	padding-top: 0em;
+	width: 500px;
+	margin:auto;
+}
+
+span.affiliation{
+	padding: 1em;
+	color:#aaa;
+}
+
+div#venue{
+	padding-bottom: 0.5em;
+	color:#bbb;
+	
+	font-size:16px;
+}
+
+div#package a{
+	margin: 0.75em;
+	
+	font-size:20px;
+}
+
+img#teaser{
+	width: 800px;
+}
+
+
+#gruvi-logo{
+	width: 300px;
+}
+
+    -->
+</style>
+
+
+
+<body data-gr-c-s-loaded="true">
+
+<div id="paper-title"> <h1> 	LOGAN: Unpaired Shape Transform in Latent Overcomplete Space</h1> </div>
+
+<div id="venue">
+	SIGGRAPH Asia  2019
+</div>
+
+<div id="author-list">  
+	<a href="http://kangxue.org/"> Kangxue Yin </a>
+	<a href="https://czq142857.github.io/"> Zhiqin Chen </a>
+	<a href="https://vcc.tech/~huihuang"> Hui Huang </a>
+	<a href="https://danielcohenor.com/"> Daniel Cohen-Or </a>
+	<a href="https://www.cs.sfu.ca/~haoz/"> Hao Zhang </a>	
+</div>
+
+
+<div id="teaser-part">
+	<a class="imageLink" href="images/logan_rep.jpg" ><img id="teaser" src="images/logan_rep.jpg" style="height: 300px; width: auto" ></a>
+</div>
+
+<div id="abstract">
+	<h2 class="caption"> Abstract </h2>
+	<p class="paragraph">  
+We introduce LOGAN, a deep neural network aimed at learning general-purpose shape transforms from unpaired domains. The network is trained on two sets of shapes, e.g., tables and chairs, while there is neither a pairing between shapes from the domains as supervision nor any point-wise correspondence between any shapes. Once trained, LOGAN takes a shape from one domain and transforms it into the other. Our network consists of an autoencoder to encode shapes from the two input domains into a common latent space, where the latent codes concatenate multi-scale shape features, resulting in an overcomplete representation. The translator is based on a generative adversarial network (GAN), operating in the latent space, where an adversarial loss enforces cross-domain translation while a feature preservation loss ensures that the right shape features are preserved for a natural shape transform. We conduct ablation studies to validate each of our key network designs and demonstrate superior capabilities in unpaired shape transforms on a variety of examples over baselines and state-of-the-art approaches. We show that LOGAN is able to learn what shape features to preserve during shape translation, either local or non-local, whether content or style, depending solely on the input domains for training.
+	</p>
+</div>
+
+<div id="package">
+	<a href="https://arxiv.org/pdf/1903.10170.pdf">paper</a>
+	<a href="https://github.com/kangxue/LOGAN">data</a>
+	<a href="https://github.com/kangxue/LOGAN">code</a>
+	
+</div>
+
+
+	<br>
+
+<!--
+<div id="video">
+	<h2 class="caption">Fast-forward Video </h2>
+	<br>
+
+<iframe width="600" height="338" src="https://www.youtube.com/embed/RYzLWF4cNrY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+-->
+
+
+	<br>
+	<br>
+
+<h2 class="caption">Citation </h2>
+<p class="paragraph">  
+@article {yin2019logan,  <br>&nbsp; &nbsp;
+  author = {Kangxue Yin and Zhiqin Chen and Hui Huang and Daniel Cohen-Or and Hao Zhang}  <br>&nbsp; &nbsp;
+  title = {	LOGAN: Unpaired Shape Transform in Latent Overcomplete Space}  <br>&nbsp; &nbsp;
+  journal = {ACM Transactions on Graphics(Special Issue of SIGGRAPH Asia)}  <br>&nbsp; &nbsp;
+  volume = {38}  <br>&nbsp; &nbsp;
+  number = {6}  <br>&nbsp; &nbsp;
+  pages = {198:1--198:13}  <br>&nbsp; &nbsp;
+  year = {2019}  <br>
+}
+<br>
+
+</p>
+</div>
+
+
+
+
+<div id="footer">
+	<a href="http://gruvi.cs.sfu.ca/"> <img id="gruvi-logo" src="./misc/gruvi_logo.png" style="height: 40px; width: auto;"> </a>
+</div>
+
+
+
+</body>
+</html>
