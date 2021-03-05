@@ -44,7 +44,14 @@
      color: blue;
 	 text-decoration: none;
 	}
-
+	
+    .crop img {
+        width: 243px;
+        height: 137px;
+		margin-left: -50px;
+		margin-right: -50px;
+    }
+	  
     -->
 </style>
 </head>
@@ -109,7 +116,8 @@
 <!-- self-intro -->
 <tr>
   
-    <td rowspan="15" class="style5">&nbsp;&nbsp;</td>
+	<!-- rowspan needs to be increased if the rows of the table grows bigger than 100 -->
+    <td rowspan="100" colspan="1" class="style5">&nbsp;&nbsp;</td>  
     <td style="height: 80px;" colspan="5" valign="top" >
 	<p class="STYLE2">
 	I am a research scientist at <a href="https://www.nvidia.com/en-us/"  style="text-decoration: none">NVIDIA</a> working on computer graphics(AI-driven) and computer vision in the <a href="https://blogs.nvidia.com/blog/2018/06/13/nvidia-ai-research-lab-toronto/" style="text-decoration: none">Toronto AI lab</a> led by Prof. <a href="https://www.cs.utoronto.ca/~fidler/"  style="text-decoration: none">Sanja Fidler</a>.
@@ -134,10 +142,45 @@
 <!-- publication -->
 
 
-  
+ 
+<tr>
+	<td valign="middle" colspan="1"  ><strong>2021</strong>
+	</td>	
+	<td colspan="5" valign="middle" class="style22"></td>
+</tr>
+ 
+<tr>
+	<td valign="middle" >	
+	<div class="crop"><a href="images/neuralLOD.gif"><img src="images/neuralLOD.gif" alt="" width="187" height="105" /></a></div>
+	</td>
+    <td colspan="5" valign="middle" class="style22"><span class="STYLE2"><strong>Neural Geometric Level of Detail: Real-time Rendering with Implicit 3D Shapes</strong>. <br />
+	Towaki Takikawa*, Joey Litalien*, <u>Kangxue Yin</u>, Karsten Kreis, Charles Loop, Derek Nowrouzezahrai, Alec Jacobson, Morgan McGuire, Sanja Fidler<br />
+	CVPR 2021 (oral)<br />
+	[<a href="https://nv-tlabs.github.io/nglod/assets/nglod.pdf">paper</a>][<a href="https://nv-tlabs.github.io/nglod/">project page</a>]
+	</span>
+	</td>
+</tr>
+ 
+<tr>
+    <td valign="middle" >	<a href="images/datasetgan.jpg">	<img src="images/datasetgan.jpg" alt="" width="187" height="108" /></a></td>
+    <td colspan="5" valign="middle" class="style22"><span class="STYLE2"><strong>DatasetGAN: Efficient labeled data factory with minimal human effort</strong>. <br />
+	Yuxuan Zhang*, Huan Ling*, Jun Gao, <u>Kangxue Yin</u>, Jean-Francois Lafleche, Adela Barriuso, Antonio Torralba, Sanja Fidler<br />
+	CVPR 2021 (oral)<br />
+	[paper][project page]
+	</span>
+	</td>
+</tr>
+
+
+<tr>
+	<td valign="middle" colspan="1"  ><strong>2020</strong>
+	</td>	
+	<td colspan="5" valign="middle" class="style22"></td>
+</tr>
+
 <tr>
     <td valign="middle" >
-	<a href="images/sfulogo.png"><img src="images/sfulogo.png" width="187" height="120" /></a></span>
+	<a href="images/sfulogo.png"><img src="images/sfulogo.png" width="187" height="120" /></a>
 	</td>
     <td colspan="5" valign="middle" class="style22"><span class="STYLE2"><strong>Learning Shape-to-Shape Transformation.</strong><br />
 	 <u>Kangxue Yin</u><br />
@@ -153,6 +196,7 @@
 	<u>Kangxue Yin</u>, Zhiqin Chen, Siddhartha Chaudhuri, Matthew Fisher, Vladimir Kim, Hao Zhang. <br />
 	3DV 2020 (oral)<br />
 	[<a href="https://arxiv.org/pdf/2008.01936.pdf">paper</a>][<a href="papers/COALESCE.mp4">video</a>][<a href="https://github.com/kangxue/COALESCE">data and code</a>]
+	</span>
 	</td>
 </tr>
 
@@ -162,13 +206,19 @@
 	Yanran Guan, Han Liu, Kun Liu, <u>Kangxue Yin</u>, Ruizhen Hu, Oliver van Kaick, Yan Zhang, Ersin Yumer, Nathan Carr, Radomir Mech, and Hao Zhang. <br />
 	IEEE Transactions on Visualization and Computer Graphics(TVCG), 2020.<br />
 	[<a href="https://arxiv.org/abs/2005.04464">paper</a>][<a href="https://github.com/IsaacGuan/FAME">code</a>]
+	</span>
 	</td>
 </tr>
   
   
+<tr>
+	<td valign="middle" colspan="1"  ><strong>2019</strong>
+	</td>	
+	<td colspan="5" valign="middle" class="style22"></td>
+</tr>
   
 <tr>
-    <td valign="middle" >	<a href="images/logan.jpg">	<img src="images/logan.jpg" width="187" height="151" /></a></span></td>
+    <td valign="middle" >	<a href="images/logan.jpg">	<img src="images/logan.jpg" width="187" height="151" /></a></td>
     <td colspan="5" valign="middle" class="style22"><span class="STYLE2"><strong>LOGAN: Unpaired Shape Transform in Latent Overcomplete Space.</strong><br />
 	 <u>Kangxue Yin</u>, Zhiqin Chen, Hui Huang, Daniel Cohen-Or, Hao Zhang. <br />
 	   ACM Transactions on Graphics 38(6)(Special Issue of SIGGRAPH ASIA 2019 ).<br />
@@ -186,7 +236,7 @@
 <tr>
     <td valign="middle"  >
 	<a href="images/imseg.png">
-	<img src="images/imseg.png" width="187" height="118" /></a></span></td>
+	<img src="images/imseg.png" width="187" height="118" /></a></td>
     <td colspan="5" valign="middle" class="style22"><span class="STYLE2"><strong>BAE-NET: Branched Autoencoder for Shape Co-Segmentation. </strong><br />
 	 Zhiqin Chen,  <u>Kangxue Yin</u>,  Matthew Fisher, Siddhartha Chaudhuri, Hao Zhang. <br />
 	 Proc. of ICCV 2019<br />
@@ -196,9 +246,14 @@
  </tr>
   
   
+<tr>
+	<td valign="middle" colspan="1"  ><strong>2018</strong>
+	</td>	
+	<td colspan="5" valign="middle" class="style22"></td>
+</tr>
   
  <tr>
-    <td valign="middle" >	<a href="images/p2p_intp3.jpg">	<img src="images/p2p_intp3.jpg" width="187" height="118" /></a></span></td>
+    <td valign="middle" >	<a href="images/p2p_intp3.jpg">	<img src="images/p2p_intp3.jpg" width="187" height="118" /></a></td>
     <td colspan="5" valign="middle" class="style22"><span class="STYLE2"><strong>P2P-NET: Bidirectional Point Displacement Net for Shape Transform.  </strong><br />
 	 <u>Kangxue Yin</u>, Hui Huang, Daniel Cohen-Or, Hao Zhang. <br />
 	ACM Transactions on Graphics 37(4)(Special Issue of SIGGRAPH 2018 )<br />
@@ -211,7 +266,7 @@
 <tr>
     <td valign="middle" >
 	<a href="images/2pose.jpg">
-	<img src="images/2pose.jpg" width="187" height="169" /></a></span></td>
+	<img src="images/2pose.jpg" width="187" height="169" /></a></td>
     <td colspan="5" valign="middle" class="style22"><span class="STYLE2"><strong>A Sampling Approach to Generating Closely Interacting 3D Pose-pairs from 2D Annotations. </strong><br />
 	  <u>Kangxue Yin</u>, Hui Huang, Edmond S. L. Ho, Hao Wang, Taku Komura, Daniel Cohen-Or, Hao Zhang. <br />
 	IEEE Transactions on Visualization and Computer Graphics(TVCG), 2018.<br />
@@ -219,6 +274,11 @@
 	</td>
 </tr>
   
+<tr>
+	<td valign="middle" colspan="1"  ><strong>2013-2016</strong>
+	</td>	
+	<td colspan="5" valign="middle" class="style22"></td>
+</tr>
 
 <tr>
     <td valign="middle" >
@@ -235,7 +295,7 @@
 <tr>
     <td valign="middle" >
 	<a href="images/gcd.jpg">
-	<img src="images/gcd.jpg" width="187" height="146" /></a></span></td>
+	<img src="images/gcd.jpg" width="187" height="146" /></a></td>
     <td colspan="5" valign="middle" class="style22"><p class="STYLE2"><strong>Generalized Cylinder Decomposition</strong>.<br />
       Yang Zhou,  <u>Kangxue Yin</u>, Hui Huang, Hao Zhang, Minglun Gong, Daniel Cohen-Or.<br />
       ACM Transactions on 
